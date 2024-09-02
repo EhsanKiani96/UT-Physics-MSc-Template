@@ -45,7 +45,7 @@ separate files for modularity and ease of management.
     Contains acknowledgments for contributions and support received.
   - **📝 <span style="color: #0066cc;">`PersianAbstract.tex`</span>**:
     Includes the Persian abstract summarizing the research work.
-  - \*\*📖 <span style="color: #0066cc;">`Chapter1.tex`</span> to
+  - **📖 <span style="color: #0066cc;">`Chapter1.tex`</span> to
     **<span style="color: #0066cc;">`Chapter6.tex`</span>**: Each file
     represents a chapter of the thesis, facilitating easier management
     of the document.
