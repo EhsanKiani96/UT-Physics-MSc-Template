@@ -106,12 +106,13 @@ This directory is used for storing image files included in the thesis.
       - **🖥️ <span style="color: #0066cc;">Local LaTeX
         Installation</span>**: If you are using a LaTeX editor installed
         on your local machine (e.g., TeXMaker, TeXstudio), you need to
-        use the following command for compiling:
+        use the following command for
+        compiling:
         
-            ```sh
-            xelatex.exe -shell-escape -synctex=1 -interaction=nonstopmode %.tex
-            ```
-
+        ``` shell
+        xelatex.exe -shell-escape -synctex=1 -interaction=nonstopmode %.tex
+        ```
+        
         This command ensures that XeLaTeX is used with the necessary
         options to handle Persian text and other features correctly.
 
