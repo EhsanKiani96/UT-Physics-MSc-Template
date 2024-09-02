@@ -83,7 +83,7 @@ This directory is used for storing image files included in the thesis.
     corresponds to a different section or chapter of the thesis.
 
   - **Compiling the Document**: To compile the thesis, run the
-    `main.tex` file. This will integrate all the sections and
+    `Main.tex` file. This will integrate all the sections and
     configurations into a single document.
 
   - **Compiling with LaTeX Editors**:

@@ -5,12 +5,14 @@
 *.brf
 *.fls
 *.log
+*.lof
 *.out
 *.toc
 *.fdb_latexmk
 *.fls
 *.synctex.gz
 *.pdfsync
+Main.pdf
 
 # LaTeX build directories
 _build/
