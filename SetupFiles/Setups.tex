@@ -1,0 +1,60 @@
+% ------------------------------------------------------
+% Overfull Box Settings
+% ------------------------------------------------------
+\hfuzz=\maxdimen      % Ignore all overfull hbox warnings
+\vfuzz=\maxdimen      % Ignore all overfull vbox warnings
+\hbadness=99999       % Ignore all hbox badness warnings
+\boxmaxdepth=\maxdimen % Prevent warnings related to box depth
+\global\hfuzz=\maxdimen % Ensure global effect
+
+% ------------------------------------------------------
+% Section Title Formatting
+% ------------------------------------------------------
+\titleformat{\section}
+  {\LARGE}           % Section title format (size, bold)
+  {\thesection}      % Section number label
+  {1em}              % Space between number and title
+  {}                 % No additional code before title
+
+\titleformat{\subsection}
+  {\Large}           % Subsection title format (size, bold)
+  {\thesubsection}  % Subsection number label
+  {1em}              % Space between number and title
+  {}                 % No additional code before title
+
+\titleformat{\subsubsection}
+  {\large}           % Subsubsection title format (size, bold)
+  {\thesubsubsection} % Subsubsection number label
+  {1em}              % Space between number and title
+  {}                 % No additional code before title
+
+% ------------------------------------------------------
+% Document Layout and Style
+% ------------------------------------------------------
+\renewcommand{\baselinestretch}{1.5}\normalsize % Line spacing and text size
+\pagestyle{fancy}  % Use fancy headers and footers
+\cfoot{\thepage}   % Center footer with page number
+\lhead{}           % Empty left header
+\renewcommand{\headrulewidth}{0pt} % No header rule line
+\setcounter{secnumdepth}{3} % Depth of section numbering
+\MakePerPage{footnote} % Number footnotes per page
+
+% ------------------------------------------------------
+% Custom Commands and Settings
+% ------------------------------------------------------
+\DeclarePairedDelimiterX{\evaluat}[1]{.}{\rvert}{#1} % Custom delimiter
+\setlength{\TPHorizModule}{1cm} % Textpos horizontal module
+\setlength{\TPVertModule}{1cm}  % Textpos vertical module
+\setlength{\headheight}{13.20453pt} % Height of header
+
+% ------------------------------------------------------
+% Fonts
+% ------------------------------------------------------
+\settextfont{XB Yas}[
+    Path = ./Fonts/,
+    Extension = .ttf,
+    UprightFont = *,
+    ItalicFont = XB YasIt,
+    BoldFont = XB YasBd,
+    BoldItalicFont = XB YasBdIt
+]

@@ -1,0 +1,73 @@
+% ------------------------------------------------------
+% Layout and Formatting
+% ------------------------------------------------------
+\usepackage[top=35mm,right=35mm,left=25mm,bottom=25mm]{geometry} % Sets page margins
+\usepackage{fancyhdr}        % Customizes headers and footers
+\usepackage{titlesec}        % Customizes section titles
+\usepackage{setspace}        % Controls line spacing
+\usepackage{wrapfig}         % Wraps text around figures
+\usepackage{float}           % Provides enhanced control over float placement
+\usepackage{caption}         % Customizes captions for figures and tables
+\usepackage{subcaption}      % Adds support for sub-captions within figures and tables
+\usepackage{framed}          % Allows for framed text
+\usepackage{textpos}         % Absolute positioning of text on the page
+\usepackage{scalerel}        % Scales and aligns elements relative to the surrounding text
+
+% ------------------------------------------------------
+% Mathematics
+% ------------------------------------------------------
+\usepackage{amsmath, amssymb} % Basic packages for math symbols and environments
+\usepackage{mathtools}       % Enhances the amsmath package
+\usepackage{nicefrac}        % Typesets fractions in a "nice" way
+\usepackage{braket}          % Provides notation for bras and kets in quantum mechanics
+\usepackage{bm}              % Allows bold math symbols
+\usepackage{dsfont}          % Provides a double-struck font for symbols like the indicator function
+
+% ------------------------------------------------------
+% Code and Listings
+% ------------------------------------------------------
+\usepackage{listings}        % Formats and styles source code listings
+\usepackage{minted}          % Provides syntax highlighting for code using Pygments
+\usepackage{fancyvrb}        % Extends the verbatim environment with more options
+
+% ------------------------------------------------------
+% Graphics and Visualization
+% ------------------------------------------------------
+\usepackage{graphicx}        % Adds support for including graphics
+\usepackage{pdfpages}        % Allows inclusion of external PDF pages
+\usepackage{tikz}            % Draws high-quality graphics programmatically
+\usepackage{pgf}             % Low-level package for creating graphics (used by TikZ)
+\usepackage{arydshln}        % Provides dashed lines in array/tabular environments
+
+% ------------------------------------------------------
+% Hyperlinks and References
+% ------------------------------------------------------
+\usepackage[colorlinks=true%,hidelinks
+]{hyperref}        % Manages hyperlinks in the document
+\usepackage{notoccite}       % Prevents citations from appearing in the Table of Contents
+\usepackage{cite}            % Improves citation handling
+\usepackage{tocbibind}       % Adds the bibliography and index to the Table of Contents
+\usepackage{url}             % Handles URL formatting (must be before xepersian)
+
+% ------------------------------------------------------
+% Color Support (must be before bidi)
+% ------------------------------------------------------
+\usepackage{xcolor}          % Provides support for colored text and backgrounds
+
+% ------------------------------------------------------
+% Font and Language Support
+% ------------------------------------------------------
+\usepackage{fontspec}        % Interface for selecting fonts
+\usepackage{bidi}            % Provides bidirectional text support (required for right-to-left languages)
+\usepackage[localise=on]{xepersian} % Adds Persian language support, must come after bidi
+\usepackage{bidihl}          % Handles bidirectional text in listings
+
+% ------------------------------------------------------
+% Boxes and Frames
+% ------------------------------------------------------
+\usepackage[most]{tcolorbox} % Creates colored boxes
+\usepackage{epigraph}        % Typesets epigraphs (quotations) at the beginning of sections
+\usepackage{perpage}         % Resets counters (like footnote numbers) per page
+\usepackage{footnote}        % Improves the handling of footnotes
+\usepackage{textcomp}        % Adds additional symbols, like the degree symbol
+

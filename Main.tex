@@ -1,0 +1,72 @@
+% ------------------------------------------------------
+% Document Class
+% ------------------------------------------------------
+\documentclass[a4paper,oneside]{book}
+
+% ------------------------------------------------------
+% Package and Setup Files
+% ------------------------------------------------------
+\input{./SetupFiles/Packages}
+\input{./SetupFiles/Setups}
+\input{./SetupFiles/Commands}
+\input{./SetupFiles/Environment}
+
+% ------------------------------------------------------
+% Begin Document
+% ------------------------------------------------------
+\begin{document}
+
+% ------------------------------------------------------
+% Title and Preliminary Pages
+% ------------------------------------------------------
+\include{./TexFiles/Basmala}
+\include{./TexFiles/PerisanTitle}
+\pagenumbering{adadi}
+\setcounter{page}{1}
+\include{./TexFiles/Originality}
+\include{./TexFiles/Dedication}
+\include{./TexFiles/Acknowledgments}
+\include{./TexFiles/PersianAbstract}
+
+% ------------------------------------------------------
+% Tables and Lists
+% ------------------------------------------------------
+\setcounter{tocdepth}{3}
+\tableofcontents
+\listoffigures
+%\listoftables
+% \printnomenclature
+
+% ------------------------------------------------------
+% Main Content
+% ------------------------------------------------------
+\newpage
+\pagenumbering{arabic}
+\include{./TexFiles/Chapter1}
+\include{./TexFiles/Chapter2}
+\include{./TexFiles/Chapter3}
+\include{./TexFiles/Chapter4}
+\include{./TexFiles/Chapter5}
+\include{./TexFiles/Chapter6}
+
+% ------------------------------------------------------
+% Bibliography
+% ------------------------------------------------------
+\bibliographystyle{./SetupFiles/Modified-unsrt-fa}
+\renewcommand{\bibname}{مراجع}
+\bibliography{./TexFiles/Reference}
+
+% ------------------------------------------------------
+% Appendix
+% ------------------------------------------------------
+\appendix
+\include{./TexFiles/Appendix1}
+
+% ------------------------------------------------------
+% English Titles and Abstract
+% ------------------------------------------------------
+\renewcommand{\baselinestretch}{2}\normalsize
+\include{./TexFiles/EnglishAbstract}
+\include{./TexFiles/EnglishTitle}
+
+\end{document}

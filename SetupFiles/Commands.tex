@@ -1,0 +1,56 @@
+% ------------------------------------------------------
+% Redefine Commands
+% ------------------------------------------------------
+\let\oldnicefrac\nicefrac % Save the old definition of \nicefrac
+\renewcommand{\nicefrac}[2]{\oldnicefrac{\displaystyle #1}{\displaystyle #2}} % Redefine \nicefrac for display style
+
+% ------------------------------------------------------
+% New Commands
+% ------------------------------------------------------
+\newcommand{\narrowequal}{\mathrel{\text{\scalebox{0.7}[1]{$=$}}}} % Narrow equal sign
+
+\newcommand{\narrowminus}{\mathrel{\text{\scalebox{0.7}[1]{$-$}}}} % Narrow minus sign
+
+\newcommand{\smallpm}{\mathbin{\vcenter{\hbox{\scalebox{0.8}[0.7]{$\pm$}}}}} % Small plus-minus sign
+
+\newcommand{\smapllcoloneqq}{\mathrel{\scalebox{0.8}[1]{$\coloneqq$}}} % Small colon-equal sign
+
+\newcommand{\smallplus}{\mathbin{\vcenter{\hbox{\scalebox{0.8}[0.7]{$+$}}}}} % Small plus sign
+
+\newcommand{\smalltimes}{\mathbin{\vcenter{\hbox{\scalebox{0.8}[0.7]{$\times$}}}}} % Small cross sign
+
+\newcommand{\smallleq}{\mathbin{\vcenter{\hbox{\scalebox{0.8}[0.7]{$\leq$}}}}} % Small less than or equal to sign
+
+\newcommand{\smallless}{\mathbin{\vcenter{\hbox{\scalebox{0.8}[0.7]{$<$}}}}} % Small less than sign
+
+\newcommand{\smallll}{\mathbin{\vcenter{\hbox{\scalebox{0.8}[0.8]{$\ll$}}}}} % Small much less than sign
+
+\newcommand{\smallgreater}{\mathbin{\vcenter{\hbox{\scalebox{0.8}[0.7]{$>$}}}}} % Small greater than sign
+
+\newcommand{\smallapprox}{\mathbin{\vcenter{\hbox{\scalebox{0.8}[0.7]{$\approx$}}}}} % Small approximately equal to sign
+
+\newcommand{\smallneq}{\mathrel{\scalebox{0.75}[1]{$\neq$}}} % Small not equal to sign
+
+\newcommand{\hochkomma}{$^{\text{،}}$} % Arabic comma symbol
+
+\newcommand{\mathsym}[1]{{}} % Placeholder for symbols
+
+\newcommand{\unicode}[1]{{}} % Placeholder for Unicode characters
+
+\newcommand{\legend}[1]{\textcolor{#1}{\rule{1.5em}{1.5pt}}} % Color legend box
+
+\newcommand{\mycaption}[1]{%
+  \captionsetup{list=false}%
+  \caption{#1}%
+} % Custom caption command to prevent listing in the table of figures
+
+% ------------------------------------------------------
+% Color Definitions
+% ------------------------------------------------------
+\definecolor{lightgreen}{rgb}{0.56, 0.93, 0.56} % Light green color
+\definecolor{moonstoneblue}{rgb}{0.45, 0.66, 0.76} % Moonstone blue color
+\definecolor{darkgreen}{RGB}{0,146,69} % Dark green color
+\definecolor{darkblue}{RGB}{0,113,188} % Dark blue color
+\definecolor{blackblue}{RGB}{0.0, 34, 64} % Black blue color
+\definecolor{cobaltblue}{RGB}{0.0, 71, 171} % Cobalt blue color
+\definecolor{bidihlcolor}{rgb}{1,0.7,0} % Bidihl color

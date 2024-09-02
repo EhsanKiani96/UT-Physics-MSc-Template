@@ -1,0 +1,27 @@
+% ------------------------------------------------------
+% Custom Box Style Definition
+% ------------------------------------------------------
+\newtcolorbox{mathematica}[4]{%
+    enhanced,                     % Enhanced color box features
+    width=\textwidth,            % Set the width of the box to text width
+    colback=#3,                  % Background color of the box
+    colframe=#2,                 % Frame color of the box
+    coltitle=#4,                 % Title text color
+    title={\bfseries\small \textcolor{#4}{#1}}, % Title content with title text color
+    fontupper=\ttfamily\color{#4}, % Font style and color of text inside the box
+    rounded corners,             % Smooth, rounded corners
+    boxrule=0.5mm,               % Frame thickness
+    attach boxed title to top left={xshift=5mm, yshift=-2mm}, % Position of the title box
+    boxed title style={%
+        colback=#3,              % Background color of the title box
+        colframe=#2,             % Frame color of the title box
+    },
+    breakable,                   % Allow the box to break across pages
+    before skip=10pt,            % Space before the box
+    after skip=10pt,             % Space after the box
+    left=6mm,                    % Inner left padding
+    right=8mm,                   % Inner right padding
+    top=2mm,                     % Inner top padding
+    bottom=2mm,                  % Inner bottom padding
+    before upper={\let\pmb\relax \onehalfspacing} % Disable \pmb and set line spacing to 1.5
+}

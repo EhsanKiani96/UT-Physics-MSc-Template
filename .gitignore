@@ -1,0 +1,44 @@
+# LaTeX-specific files
+*.aux
+*.bbl
+*.blg
+*.brf
+*.fls
+*.log
+*.out
+*.toc
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.pdfsync
+
+# LaTeX build directories
+_build/
+out/
+
+# Minted directory
+_minted-Main/
+
+# Editor-specific files
+*.swp
+*.swo
+
+# MacOS-specific files
+.DS_Store
+
+# Windows-specific files
+Thumbs.db
+
+# LaTeX-related temporary files
+*.nav
+*.snm
+*.vrb
+*.glo
+*.ist
+*.dvi
+*.xdv
+
+# Other potential temporary files
+*.tmp
+*.bak
+*.old
