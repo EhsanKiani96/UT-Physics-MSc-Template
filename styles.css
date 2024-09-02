@@ -1,0 +1,26 @@
+/* styles.css */
+.custom-title {
+    color: #003366;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.custom-subtitle {
+    color: #003366;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.custom-file {
+    color: #0066cc;
+    font-weight: bold;
+}
+
+.custom-text {
+    color: #333333; /* Optional: To ensure text color consistency */
+}
+
+.custom-instruction {
+    color: #003366;
+    font-weight: bold;
+}
